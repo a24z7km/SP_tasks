@@ -1,10 +1,10 @@
 def verb_ing(s):
-    if len(s) <= 3:
-        return s + "ing"
-    elif s[-3:] == "ing":
+    if s[-3:] == "ing":
         return s + "ly"
-    elif len(s) >= 2:
+    elif len(s) > 2:
+        return s + "ing"
+    else:
         return s
-print(verb_ing("hail"))
-print(verb_ing("swimming"))
-print(verb_ing("do"))
+print(verb_ing("hail"))     #hailing
+print(verb_ing("swimming")) #swimmingly
+print(verb_ing("do"))       #do
